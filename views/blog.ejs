@@ -1,0 +1,22 @@
+<h1 class="mt-4">Blog</h1>
+<p class="lead mb-3">Welcome <%= user.name %></p>
+<li>
+  <form action="/create-blog" method="post">
+    <label for="title">Title:</label>
+    <br />
+    <input type="text" id="title" name="title" required />
+    <br />
+
+    <label for="content">Content:</label>
+    <br />
+    <textarea id="content" name="content" rows="5" required></textarea>
+    <br />
+    <form action="/createNew" method="post">
+        <input type="text" name="title" placeholder="Title">
+        <textarea name="content" placeholder="Content"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+          <br />
+  </form>
+</li>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
